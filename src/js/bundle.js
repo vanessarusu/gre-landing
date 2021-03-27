@@ -13,7 +13,7 @@
         if(Boolean(document.querySelector(".age-gate-wrapper"))) {
             var html = '<div class="video-contain"><video id="ageGateVideo" muted="" playsinline="" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background: transparent; z-index:100; transition: all 1s ease; left: 0px; top: 0px; opacity: 0;"><source src=\"https://lwdgdev.ca/gre/wp-content/uploads/20210310_KENNY-HEAD_NOGlow_720p.mov\" type="video/mp4"></video></div>';
             var hook = document.querySelector(".age-gate-wrapper");
-            hook.insertAdjacentHTML("beforebegin", html);
+            hook.insertAdjacentHTML("afterbegin", html);
 
             // play the video and give opacity
             setTimeout(function() {
