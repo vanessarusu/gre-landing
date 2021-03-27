@@ -13,8 +13,13 @@ header {
 
     .fl-page-header-logo {
         max-width: 250px;
+
         @media (max-width: $tablet) {
             max-width: 140px;
+        }
+
+        img {
+            margin-top: -35px;
         }
     }
 }
