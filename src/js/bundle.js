@@ -20,7 +20,7 @@
                 var vid = document.querySelector("#ageGateVideo");
                 vid.play();
                 vid.style.opacity = 1;
-                document.querySelector('.age-gate-wrapper').style.background = 'transparent';
+                document.querySelector('.age-gate-background-colour').style.background = 'transparent';
             },400);
 
             // fade in buttons and ui
