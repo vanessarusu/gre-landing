@@ -6,10 +6,12 @@
         links[i].classList.remove('current-menu-item');
     }
 
+    setTimeout(function(){
+        var html = '<video id="ageGateVideo" muted="" playsinline="" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background: transparent; z-index:100; min-height: 100vh; transition: all 1s ease; left: 0px; top: 0px; opacity: 0; min-width: 100vw; position:fixed;"><source src=\"https://lwdgdev.ca/gre/wp-content/uploads/20210310_KENNY-HEAD_NOGlow_720p.mov\" type="video/mp4"></video>';
+        var hook = document.querySelector(".age-gate-wrapper");
+    },10)
 
-    var html = '<video id="ageGateVideo" muted="" playsinline="" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background: transparent; z-index:100; min-height: 100vh; transition: all 1s ease; left: 0px; top: 0px; opacity: 0; min-width: 100vw; position:fixed;"><source src=\"https://lwdgdev.ca/gre/wp-content/uploads/20210310_KENNY-HEAD_NOGlow_720p.mov\" type="video/mp4"></video>';
-
-    var hook = document.querySelector(".age-gate-wrapper");
+   
     setTimeout(function(){
         var vid = document.querySelector("#ageGateVideo");
         vid.play();
